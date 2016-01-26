@@ -1,0 +1,11 @@
+<h1>Albums List</h1>
+
+<p>conteudo liberado</p>
+
+<% if current_user && current_user.editor? %>
+	<p>Conteudo permitido somente para perfil de editor</p>
+<% end %>	
+
+<% if current_user && current_user.admin? %>
+	<p>Conteudo permitido somente para perfil de admin</p>
+<% end %>	
